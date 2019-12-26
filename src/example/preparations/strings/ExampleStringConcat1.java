@@ -1,6 +1,6 @@
 package example.preparations.strings;
 
-public class ExmapleStringConcat1 {
+public class ExampleStringConcat1 {
 
 	
 	public static void main(String[] args) {
