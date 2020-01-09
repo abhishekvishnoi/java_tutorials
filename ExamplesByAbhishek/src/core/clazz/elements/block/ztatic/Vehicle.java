@@ -1,4 +1,4 @@
-package core.clazz.elements.block.sstatic;
+package core.clazz.elements.block.ztatic;
 
 public class Vehicle {
 
