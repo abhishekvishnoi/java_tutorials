@@ -1,4 +1,4 @@
-package example.preparations.strings;
+package memory.string.pool.concat;
 
 public class ExampleStringConcat1 {
 
@@ -9,7 +9,6 @@ public class ExampleStringConcat1 {
 		String s1 = "a";
 		// s2 refers s1 already created in String pool
 		String s2 = "a";
-		
 		
 		// references for s1 and s2 will be same .
 		System.out.println(s1==s2);
@@ -30,9 +29,6 @@ public class ExampleStringConcat1 {
 		
 		System.out.println(s4==s5);
 		//System.out.println(s3.equals(s4));
-		
-		
-		
 		
 	}
 	

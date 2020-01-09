@@ -1,4 +1,4 @@
-package example.preparations.strings;
+package memory.string.pool.concat;
 
 public class ExampleStringConcat2 {
 

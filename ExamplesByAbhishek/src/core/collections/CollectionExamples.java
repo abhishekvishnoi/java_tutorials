@@ -1,4 +1,4 @@
-package example.preparations.collections;
+package core.collections;
 
 import java.util.ArrayList;
 import java.util.Collections;
