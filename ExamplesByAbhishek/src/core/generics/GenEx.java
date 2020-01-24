@@ -23,10 +23,10 @@ public class GenEx {
 
 		// There is no need to type cast the variables when using generics.
 
-		TypeVar<String> tvi1 = new TypeVar<String>("1");
-		TypeVar<String> tvi2 = new TypeVar<String>("2");
+		TypeVar<Integer> tvi1 = new TypeVar<Integer>(1);
+		TypeVar<Integer> tvi2 = new TypeVar<Integer>(2);
 
-		String sumg = tvi1.getType() + tvi2.getType();
+		Integer sumg = tvi1.getType() + tvi2.getType();
 		System.out.println(sumg);
 
 	}
