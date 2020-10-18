@@ -5,10 +5,12 @@ public class Threadd  implements Runnable{
 	@Override
 	public void run() {
 		
-		System.out.println(" I want to create a new connection.");
-		Connection conn = Connection.getInstance();
-		conn.connect();
-		
+		System.out.println(" I want to create a new object.");
+		//Connection conn = Connection.getInstance();
+		//conn.connect();
+
+		MySingleton myObj = MySingleton.getSingletonObj();
+		myObj.printHello();
 		
 		
 	}

@@ -51,7 +51,7 @@ public class Car implements Vehicle {
 
 	@Override
 	public void run() {
-		System.out.println("Car is now running");
+		System.out.println("Car is now running a " + engineType + "engine , with fuel type :" + fuelType);
 
 	}
 
