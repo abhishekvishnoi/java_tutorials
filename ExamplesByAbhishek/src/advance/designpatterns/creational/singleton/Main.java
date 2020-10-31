@@ -6,14 +6,15 @@ public class Main {
 
 
 	public static void main(String[] args) {
-		
 
-     Thread t1 = new Thread(new Threadd());
-     
-     t1.run();
-     
-     Thread t2 = new Thread(new Threadd());
-		
-     t2.run();
+	    for (int i=0;i<=5 ; i++){
+
+        }
+
+        Thread t1 = new Thread(new Threadd());
+        t1.run();
+
+        Thread t2 = new Thread(new OtherThreadd());
+        t2.run();
 	}
 }

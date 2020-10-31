@@ -9,10 +9,12 @@ public class Threadd  implements Runnable{
 		//Connection conn = Connection.getInstance();
 		//conn.connect();
 
-		MySingleton myObj = MySingleton.getSingletonObj();
-		myObj.printHello();
-		
-		
+		//MySingleton myObj = MySingleton.
+		//myObj.printHello();
+
+		MySingleton obj = MySingleton.getMySingleton();
+		obj.printHello();
+
 	}
 
 }

@@ -2,32 +2,30 @@ package advance.designpatterns.creational.singleton;
 
 public class MySingleton {
 
-    private static MySingleton obj;
+    private volatile static MySingleton mySingleton;
 
-    MySingleton(){}
+    public static MySingleton getMySingleton(){
 
-    public static MySingleton getSingletonObj(){
-
-        if(obj == null)
-        {
-
-            synchronized (MySingleton.class)
-            {
-                if(obj==null){
-                    obj = new MySingleton();
-                    System.out.println("create new object ..");
-                }else {
-                    System.out.println("return old object");
+        if(mySingleton == null) {
+            synchronized (MySingleton.class) {
+                if(mySingleton==null){
+                    mySingleton = new MySingleton();
+                    System.out.println("No object is available , providing the new object");
+                }else{
+                    System.out.println("an object is available in other thread , providing the same object");
                 }
             }
         }else{
-            System.out.println("return old object");
+            System.out.println("an object is available , providing the same object");
         }
-        return obj;
+
+        return mySingleton;
+
     }
 
+
     public void printHello(){
-        System.out.print("Object Says Hello");
+        System.out.println("Object Says Hello");
     }
 
 }

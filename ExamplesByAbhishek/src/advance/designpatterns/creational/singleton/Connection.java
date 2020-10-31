@@ -2,7 +2,7 @@ package advance.designpatterns.creational.singleton;
 
 public class Connection {
 
-	private static Connection conn;
+	private volatile static Connection conn;
 
 	private Connection() {
 
