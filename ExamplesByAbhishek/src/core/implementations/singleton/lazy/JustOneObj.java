@@ -11,7 +11,6 @@ public class JustOneObj {
 	public static JustOneObj getInstance() {
 
 		if (joo == null) {
-
 			joo = new JustOneObj();
 		}
 

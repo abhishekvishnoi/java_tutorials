@@ -1,6 +1,6 @@
 package core.abstraction.interfaces;
 
-public class FiatEngine implements Engine {
+public class FiatEngine implements RunnableEngine {
 
 	String type;
 
@@ -8,7 +8,6 @@ public class FiatEngine implements Engine {
 		this.type = t;
 	}
 
-	@Override
 	public void run() {
 		System.out.println("i'm a " + type + " engine from FIAT");
 	}

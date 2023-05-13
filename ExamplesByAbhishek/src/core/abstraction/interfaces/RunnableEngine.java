@@ -1,6 +1,6 @@
 package core.abstraction.interfaces;
 
-public interface Engine {
+public interface RunnableEngine {
 
 	void run();
 
